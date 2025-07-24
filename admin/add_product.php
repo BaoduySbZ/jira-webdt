@@ -213,3 +213,77 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 require_once '../includes/footer.php'; // Nhúng footer
 $conn->close(); // Đóng kết nối CSDL
 ?>
+
+<style>
+    h2 {
+        color: #2c3e50;
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .form-container {
+        background: #f9f9f9;
+        border: 1px solid #ddd;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+        margin: 0 auto;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 6px;
+        color: #333;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="file"],
+    select,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        font-size: 15px;
+        transition: border-color 0.3s;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+        border-color: #3498db;
+        outline: none;
+    }
+
+    textarea {
+        resize: vertical;
+    }
+
+    small {
+        display: block;
+        color: #888;
+        margin-top: 5px;
+    }
+
+    button[type="submit"] {
+        padding: 12px 25px;
+        background-color: #2ecc71;
+        color: white;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    button[type="submit"]:hover {
+        background-color: #27ae60;
+    }
+</style>
